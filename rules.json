@@ -1,0 +1,30 @@
+[
+  {
+    "field": "cpu_pct",
+    "op": "gt",
+    "value": 90,
+    "severity": "medium",
+    "message": "CPU saturation"
+  },
+  {
+    "field": "memory_pct",
+    "op": "gt",
+    "value": 90,
+    "severity": "medium",
+    "message": "Memory pressure"
+  },
+  {
+    "field": "disk_free_pct",
+    "op": "lt",
+    "value": 10,
+    "severity": "high",
+    "message": "Disk almost full"
+  },
+  {
+    "field": "backup_age_hours",
+    "op": "gt",
+    "value": 48,
+    "severity": "high",
+    "message": "Backup may be stale"
+  }
+]
